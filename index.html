@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pipedrive Deal</title>
+  </head>
+  <body>
+    <form id="dealForm">
+      <div class="formSections">
+        <div class="formClient">
+          <h2>Client Details</h2>
+          <div class="inputField">
+            <input type="text" id="name" name="name" placeholder="First name" />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="inputField">
+            <input type="number" id="phone" name="phone" placeholder="Phone" />
+          </div>
+          <div class="inputField">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email (optional)"
+            />
+          </div>
+        </div>
+        <div class="formJobDetails">
+          <h2>Job Details</h2>
+          <div class="inputField">
+            <select name="jobType" id="jobType">
+              <option value="" selected>Job Type</option>
+              <option value="fullTime">Full time</option>
+              <option value="partTime">Part time</option>
+            </select>
+            <select name="jobSource" id="jobSource">
+              <option value="" selected>Job source</option>
+              <option value="linkedin">Linkedin</option>
+              <option value="glassdor">Glassdor</option>
+            </select>
+          </div>
+          <div class="inputField">
+            <textarea
+              name="jobDescription"
+              id="jobDescription"
+              cols="30"
+              rows="10"
+              placeholder="Job description (optional)"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="formSections">
+        <div class="formServiceLocation">
+          <h2>Service Location</h2>
+          <div class="inputField">
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address"
+            />
+          </div>
+          <div class="inputField">
+            <input type="text" name="city" id="city" placeholder="City" />
+          </div>
+          <div class="inputField">
+            <input type="text" name="state" id="state" placeholder="State" />
+          </div>
+          <div class="inputField">
+            <input
+              type="number"
+              name="zipCode"
+              id="zipCode"
+              placeholder="Zip code"
+            />
+            <select name="area" id="area">
+              <option value="" selected>Area</option>
+              <option value="area1">area 1</option>
+              <option value="area2">area 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="formScheduled">
+          <h2>Scheduled</h2>
+          <div class="inputField">
+            <div class="inputFieldWithLabel">
+              <label for="">Start date</label>
+              <input type="date" name="startDate" id="startDate" />
+            </div>
+          </div>
+
+          <div class="inputField">
+            <div class="inputFieldWithLabel">
+              <label for="">Start time</label>
+              <input type="time" name="startTime" id="startTime" />
+            </div>
+            <div class="inputFieldWithLabel">
+              <label for="">End time</label>
+              <input type="time" name="endTime" id="endTime" />
+            </div>
+          </div>
+          <div class="inputField">
+            <select name="testSelect" id="testSelect">
+              <option value="" selected>Test select</option>
+              <option value="select1">Select 1</option>
+              <option value="select2">Select 2</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="formFooter">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

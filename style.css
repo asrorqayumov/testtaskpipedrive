@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+form {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formSections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.formClient,
+.formJobDetails,
+.formServiceLocation,
+.formScheduled {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.inputField {
+  display: flex;
+  margin-bottom: 15px;
+}
+.inputFieldWithLabel {
+  width: 100%;
+}
+.inputFieldWithLabel label {
+  margin-bottom: 50px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+input + input, input + select, select+select, .inputFieldWithLabel+.inputFieldWithLabel {
+  margin-left: 10px;
+}
+textarea {
+  resize: none;
+}
+
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="date"],
+input[type="time"] {
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.formFooter {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .formSections {
+    flex-direction: column;
+  }
+
+  .formClient,
+  .formJobDetails,
+  .formServiceLocation,
+  .formScheduled {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
