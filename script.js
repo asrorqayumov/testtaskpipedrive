@@ -16,8 +16,8 @@ dealForm.addEventListener("submit",  function (event) {
 });
 
 async function createDeal(dealData) {
-  const pipedriveToken = "8838d5a1c4691eec27decb74636466334e4e97d2";
-  const companyDoman = "personal15";
+  const pipedriveToken = "ae5afd4c28e0a33f0aa9aee99ca231c314d7d251";
+  const companyDoman = "personal-sandbox5";
 
   const url = `https://${companyDoman}.pipedrive.com/api/v1/deals?api_token=${pipedriveToken}`;
 
